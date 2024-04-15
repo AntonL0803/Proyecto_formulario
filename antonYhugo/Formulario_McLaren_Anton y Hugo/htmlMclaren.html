@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <header>
+        <!-- Barra de navegación -->
+        <h1 class="letra">MClaren</h1>
+        <nav class="navegación">
+            <a class="letra" href="">Noticias</a>
+            <a class="letra" href="">Historia</a>
+        </nav>
+    </header>
+    <main>
+        <img id="imgCoche" src="IMG\MCLAREN_ARTURA_SPIDER_HERO_REAR_34_LOW_HOME.jpg" alt="" width="100%">
+
+
+        <section id="columnas">
+            <section id="izquierda" class="tabla">
+                <h3>Formulario de Contacto</h3>
+                <form>
+                    <!-- Nombre y apellidos -->
+                    <article>
+                        <label for="nombre">Nombre y Apellidos:</label><br>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+                    </article>
+
+                    <!-- DNI -->
+                    <article>
+                        <label for="dni">DNI con letra (8 o 9 dígitos y una letra mayúscula):</label><br>
+                        <input type="text" id="dni" name="dni" pattern="[0-9]{8,9}[A-Z]" required><br><br>
+                    </article>
+
+                    <!-- Número de teléfono -->
+                    <article>
+                        <label for="telefono">Número de Teléfono (máximo 9 dígitos):</label><br>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{0,9}" maxlength="9"
+                            required><br><br>
+                    </article>
+
+                    <!-- Correo electrónico -->
+                    <article>
+                        <label for="email">Correo Electrónico:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                    </article>
+
+                    <!-- Botón de enviar -->
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+
+            <section id="derecha" class="tabla">
+
+                <!--Eleccion de coche-->
+                <article>
+                    <h4>Tipo de coche</h4>
+
+                    <select id="coches">
+                        <option value="coche1">coche1</option>
+                        <option value="coche2">coche2</option>
+                        <option value="coche3" selected>coche3</option>
+                        <option value="coche4">coche4</option>
+                    </select><br><br>
+                </article>
+
+                <!--Radius de tipo de de caja de cambio-->
+                <article>
+                    <label for="radio">Tipo de coche</label><br>
+                    <input type="radio" id="si" name="caja" value="si">
+                    <label for="si">Manual</label>
+                    <input type="radio" id="no" name="caja" value="no">
+                    <label for="no">Automatico</label><br><br>
+                </article>
+
+                <!--Radius de tipo de combustible-->
+                <article>
+                    <label for="radio">Tipo de combustible</label><br>
+                    <input type="radio" id="si" name="combustible" value="si">
+                    <label for="si">Gasolina</label>
+                    <input type="radio" id="no" name="combustible" value="no">
+                    <label for="no">Gasoil</label>
+                    <input type="radio" id="no" name="combustible" value="no">
+                    <label for="no">Gas</label><br><br>
+                </article>
+
+                <article>
+                    <h4>!Modelo: campo de entrada de texto para que el usuario introduzca el modelo, con hasta 20
+                        caracteres.!</h4><br>
+                </article>
+
+                <!--Modelado de color del coche-->
+                <article>
+                    <h1>Seleccionar Color del Vehículo</h1>
+                    <form>
+                        <label for="color">Color del Vehiculo</label><br>
+                        <input type="color" id="color" name="color" value="#ff0000"><br><br>
+                        <input type="submit" value="Guardar">
+                    </form>
+                </article>
+            </section>
+        </section>
+    </main>
+
+</body>
+
+</html>
