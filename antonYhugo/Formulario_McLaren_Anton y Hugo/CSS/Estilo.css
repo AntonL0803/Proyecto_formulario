@@ -36,7 +36,7 @@ nav {
 .tabla {
     width: 2000px;
     height: 200px;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     border-radius: 22px;
     padding: 7px;
     height: 100%;
@@ -58,4 +58,19 @@ nav {
     float: right;
     
 }
-  
+
+footer {
+    margin-top: 29px;
+    background-color: #ffffff;
+    /* Fondo semi-transparente para el pie de página */
+    color: #000000;
+    /* Color del texto del pie de página */
+    font-size: 16px;
+    /*Tamaño de la letra*/
+    padding: 30px;
+    /* Añade espacio  al pie de página */
+    text-align: center;
+    /* Alinea el texto al centro */
+    
+
+}
