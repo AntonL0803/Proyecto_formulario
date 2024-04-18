@@ -81,6 +81,12 @@ nav {
     
 
 }
+h3{
+    padding-left: 10px;
+}
+article{
+    padding-left: 10px;
+}
 
 #izquierda {
     width: 43%;
