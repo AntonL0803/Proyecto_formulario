@@ -5,23 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./CSS/Estilo.css">
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
     <header>
         <!-- Barra de navegación -->
+        <h1 class="letra">MClaren</h1>
         <nav class="navegación">
-            <img id="logo" src="./IMG/Logo_blanco.png" alt="Logo en blanco">
-            <a class="letra" href="./formulario.html">Modelos</a>
-            <a class="letra" href="./formulario.html">Supercoches</a>
-            <a class="letra" href="./formulario.html">Personalizar</a>
-            <a class="letra" href="./formulario.html">Stories of Progress</a>
-            <a class="letra" href="./formulario.html">Postventa</a>
+            <a class="letra" href="">Noticias</a>
+            <a class="letra" href="">Historia</a>
         </nav>
     </header>
     <main>
-        <img id="imgCoche" src="./IMG/McLaren_Naranja.jpg" alt="McLaren Naranja" width="100%">
+        <img id="imgCoche" src="IMG\MCLAREN_ARTURA_SPIDER_HERO_REAR_34_LOW_HOME.jpg" alt="" width="100%">
 
 
         <section id="columnas">
@@ -43,15 +40,34 @@
                     <!-- Número de teléfono -->
                     <article>
                         <label for="telefono">Número de Teléfono (máximo 9 dígitos):</label><br>
-                        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{0,9}" maxlength="9"
+                        <input type="text" id="telefono" name="telefono" pattern="[0-9]{0,9}" maxlength="9"
                             required><br><br>
                     </article>
 
                     <!-- Correo electrónico -->
                     <article>
                         <label for="email">Correo Electrónico:</label><br>
-                        <input type="email" id="email" name="email" required><br><br>
+                        <input type="text" id="email" name="email" required><br><br>
                     </article>
+
+                    <article>
+                        <label for="Direccion">Direccion de entrega:</label><br>
+                        <input type="text" id="Direccion" name="Direccion" required><br><br>
+                    </article>
+
+                    <article>
+                        <label for="Hora">Direccion de entrega:</label><br>
+                        <input type="datetime-local" id="Hora" name="Hora" required><br><br>
+                    </article>
+
+                    <article>
+                        <label for="radio">Metodo de pago</label><br>
+                        <input type="radio" id="si" name="caja" value="si">
+                        <label for="si">Contado</label>
+                        <input type="radio" id="no" name="caja" value="no">
+                        <label for="no">Fiananciado</label><br><br>
+                    </article>
+                    <!--TO DO======Utilizacion de java para dar opciones en caso diferentes-->
 
                     <!-- Botón de enviar -->
                     <input type="submit" value="Enviar">
@@ -99,13 +115,45 @@
 
                 <!--Modelado de color del coche-->
                 <article>
-                    <h1>Seleccionar Color del Vehículo</h1>
                     <form>
                         <label for="color">Color del Vehiculo</label><br>
-                        <input type="color" id="color" name="color" value="#ff0000"><br><br>
-                        <input type="submit" value="Guardar">
+                        <input type="color" id="color" name="color" value="#ff0000">
+                        <input type="submit" value="Guardar"><br><br>
                     </form>
                 </article>
+
+                <article>
+                    <label for="equipamiento">Equipamiento adicional:</label><br>
+                    <input type="checkbox" id="alfombrillas" name="equipamiento" value="alfombrillas">
+                    <label for="alfombrillas">Alfombrillas</label><br>
+                    <input type="checkbox" id="bandeja" name="equipamiento" value="bandeja">
+                    <label for="bandeja">Bandeja protectora del maletero</label><br>
+                    <input type="checkbox" id="colgador" name="equipamiento" value="colgador">
+                    <label for="colgador">Colgador de trajes para el asiento trasero</label><br>
+                    <input type="checkbox" id="reposabrazos" name="equipamiento" value="reposabrazos">
+                    <label for="reposabrazos">Reposabrazos central</label><br>
+                    <input type="checkbox" id="ambientador" name="equipamiento" value="ambientador">
+                    <label for="ambientador">Ambientador de pino</label><br>
+                </article>
+
+                <article>
+                    <label for="comentarios">Comentarios:</label><br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" spellcheck="true"></textarea><br>
+                </article>
+            
+                <article>
+                    <input type="checkbox" id="terminos" name="terminos" checked>
+                    <label for="terminos">Acepto los términos y condiciones de compra</label><br>
+            
+                    <input type="checkbox" id="comunicaciones" name="comunicaciones" checked>
+                    <label for="comunicaciones">Deseo recibir información y comunicaciones comerciales sobre nuevos artículos, promociones y ofertas a mi correo electrónico</label><br>
+                </article>
+            
+                <article>
+                    <button type="submit">Solicitar vehículo</button>
+                    <button type="button">Cancelar solicitud</button>
+                </article>
+
             </section>
         </section>
     </main>
