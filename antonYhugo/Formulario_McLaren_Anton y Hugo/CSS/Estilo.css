@@ -59,10 +59,11 @@ nav {
 .tabla {
     width: 2000px;
     height: 200px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(182, 179, 179);
     border-radius: 22px;
     padding: 7px;
     height: 100%;
+    margin-top: 20px;
 }
 
 #columnas {
@@ -73,13 +74,15 @@ nav {
 #izquierda {
     width: 43%;
     float: left;
-    
+    margin-left: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Ejemplo: sombra desplazada 5px horizontal y verticalmente, con desenfoque de 5px y color negro con 50% de opacidad */
 }
 
 #derecha {
     width: 43%;
     float: right;
-    
+    margin-right: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Ejemplo: sombra desplazada 5px horizontal y verticalmente, con desenfoque de 5px y color negro con 50% de opacidad */
 }
 
 footer {
