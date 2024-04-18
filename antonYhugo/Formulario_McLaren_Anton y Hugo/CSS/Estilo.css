@@ -60,7 +60,19 @@ nav {
     left: 100px; /* Ajusta la posición horizontal */
     z-index: 1;
     color: white;
-  }
+}
+
+#titulo-superpuesto{
+    font-size: 45px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+#subtitulo-superpuesto{
+    font-size: 25px;
+    font-family: Verdana;
+    font-weight: bold;
+}
   
 
 
