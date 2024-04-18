@@ -84,7 +84,6 @@ nav {
     padding: 7px;
     height: 100%;
     margin-top: 20px;
-    background-image: url('./lineas.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -93,6 +92,12 @@ nav {
     display: flow-root;
     
 
+}
+h3{
+    padding-left: 10px;
+}
+article{
+    padding-left: 10px;
 }
 
 #izquierda {
@@ -111,7 +116,7 @@ nav {
 
 footer {
     margin-top: 29px;
-    background-color: #ffffff;
+    background-color: #b0a8a8;
     /* Fondo semi-transparente para el pie de página */
     color: #000000;
     /* Color del texto del pie de página */
