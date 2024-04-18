@@ -4,20 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>McLaren</title>
     <link rel="stylesheet" href="./CSS/Estilo.css">
 </head>
 
 <body>
     <header>
-        <!-- Barra de navegación -->
-        <h1 class="letra">MClaren</h1>
-        <nav class="navegación">
-            <a class="letra" href="">Noticias</a>
-            <a class="letra" href="">Historia</a>
+        <nav>
+            <img id="logo" src="./IMG/Logo_blanco.png" alt="logo de McLaren">
+            <a class="letra" href="">Modelos</a>
+            <a class="letra" href="">Buscar y comprar</a>
+            <a class="letra" href="">Servicios y accesorios</a>
+            <a class="letra" href="">Stories of progress</a>
         </nav>
     </header>
-    <img id="imgCoche" src="./IMG/McLaren_Naranja.jpg" alt="" width="100%">
+    <section>
+        <img id="imgCoche" src="./IMG/McLaren_Naranja.jpg" alt="McLaren">
+        <section class="contenedor-texto">
+            <p id="texto-superpuesto">Descubre nuestro nuevo coche</p>
+            <a href="./formulario.html">Contáctanos</a>
+        </section>
+    </section>
     <main>
         <section id="columnas">
             <section id="izquierda" class="tabla">
@@ -158,16 +165,16 @@
                     <label for="comentarios">Comentarios:</label><br>
                     <textarea id="comentarios" name="comentarios" rows="4" cols="50" spellcheck="true"></textarea><br><br>
                 </article>
-    
+
                 <article>
                     <input type="checkbox" id="terminos" name="terminos" checked>
                     <label for="terminos">Acepto los términos y condiciones de compra</label><br>
-    
+
                     <input type="checkbox" id="comunicaciones" name="comunicaciones" checked>
                     <label for="comunicaciones">Deseo recibir información y comunicaciones comerciales sobre nuevos
-                        artículos, promociones y ofertas a mi correo electrónico</label><br><br>
+                        artículos, promociones y ofertas a mi correo electrónico</label><br>
                 </article>
-    
+
                 <article>
                     <button type="submit">Solicitar vehículo</button>
                     <button type="button">Cancelar solicitud</button>
