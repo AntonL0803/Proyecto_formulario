@@ -1,6 +1,13 @@
 body{
+  margin: 0;
+  padding: 0;
+  background-image: url(../IMG/fondo\ textura.jpg);
+  background-attachment: local;
+  background-size: contain;
+  background-position: center;
+}
+main{
     margin: 0;
-    padding: 0;
 }
 nav {
     background-color: rgb(0, 0, 0);
@@ -31,6 +38,7 @@ nav {
     width: 100%;
     position: relative;
     object-fit: cover;
+    margin: 0;
 }
 
 #imgCoche::after{
@@ -64,10 +72,14 @@ nav {
     padding: 7px;
     height: 100%;
     margin-top: 20px;
+    background-image: url('./lineas.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #columnas {
     display: flow-root;
+    
 
 }
 
