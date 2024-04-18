@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="Estilo">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="./CSS/Estilo.css">
 </head>
 
 <body>
@@ -17,10 +17,8 @@
             <a class="letra" href="">Historia</a>
         </nav>
     </header>
+    <img id="imgCoche" src="./IMG/McLaren_Naranja.jpg" alt="" width="100%">
     <main>
-        <img id="imgCoche" src="IMG\MCLAREN_ARTURA_SPIDER_HERO_REAR_34_LOW_HOME.jpg" alt="" width="100%">
-
-
         <section id="columnas">
             <section id="izquierda" class="tabla">
                 <h3>Formulario de Contacto</h3>
@@ -65,12 +63,31 @@
                         <input type="radio" id="si" name="caja" value="si">
                         <label for="si">Contado</label>
                         <input type="radio" id="no" name="caja" value="no">
-                        <label for="no">Fiananciado</label><br><br>
+                        <label for="no">Fiananciado</label>
+                        <select id="meses">
+                            <option value="meses">3 meses</option>
+                            <option value="meses">6 meses</option>
+                            <option value="meses" selected>9 meses</option>
+                            <option value="meses">12 meses</option>
+                            <option value="meses">15 meses</option>
+                            <option value="meses">18 meses</option>
+                            <option value="meses">21 meses</option>
+                            <option value="meses">24 meses</option>
+                        </select><br><br>
                     </article>
-                    <!--TO DO======Utilizacion de java para dar opciones en caso diferentes-->
 
+                    <article>
+                        <label for="cuenta">Número de cuenta:</label><br>
+                        <input type="text" id="cuenta" name="cuenta" pattern="[A-Za-z]{2}\d{10}"
+                            title="Debe contener 2 letras seguidas por 10 dígitos" required><br><br>
+
+                    </article>
+                    <article>
+                        <label for="documento">Subir nómina PDF:</label><br>
+                        <input type="file" id="documento" name="documento" accept=".pdf" required><br><br>
+                        <input type="submit" value="Enviar Solicitud">
+                    </article>
                     <!-- Botón de enviar -->
-                    <input type="submit" value="Enviar">
                 </form>
             </section>
 
@@ -78,7 +95,7 @@
 
                 <!--Eleccion de coche-->
                 <article>
-                    <h4>Tipo de coche</h4>
+                    <h3>Tipo de coche</h3>
 
                     <select id="coches">
                         <option value="coche1">coche1</option>
@@ -90,16 +107,16 @@
 
                 <!--Radius de tipo de de caja de cambio-->
                 <article>
-                    <label for="radio">Tipo de coche</label><br>
+                    <label for="radio">Tipo de coche :</label>
                     <input type="radio" id="si" name="caja" value="si">
                     <label for="si">Manual</label>
                     <input type="radio" id="no" name="caja" value="no">
-                    <label for="no">Automatico</label><br><br>
+                    <label for="no">Automatico</label>
                 </article>
 
                 <!--Radius de tipo de combustible-->
                 <article>
-                    <label for="radio">Tipo de combustible</label><br>
+                    <label for="radio">Tipo de combustible :</label>
                     <input type="radio" id="si" name="combustible" value="si">
                     <label for="si">Gasolina</label>
                     <input type="radio" id="no" name="combustible" value="no">
@@ -109,8 +126,10 @@
                 </article>
 
                 <article>
-                    <h4>!Modelo: campo de entrada de texto para que el usuario introduzca el modelo, con hasta 20
-                        caracteres.!</h4><br>
+                    <form>
+                        <label for="modelo">Modelo de coche:</label><br>
+                        <input type="text" id="modelo" name="modelo" maxlength="20"><br>
+                    </form>
                 </article>
 
                 <!--Modelado de color del coche-->
@@ -133,31 +152,38 @@
                     <input type="checkbox" id="reposabrazos" name="equipamiento" value="reposabrazos">
                     <label for="reposabrazos">Reposabrazos central</label><br>
                     <input type="checkbox" id="ambientador" name="equipamiento" value="ambientador">
-                    <label for="ambientador">Ambientador de pino</label><br>
+                    <label for="ambientador">Ambientador de pino</label><br><br>
                 </article>
-
                 <article>
                     <label for="comentarios">Comentarios:</label><br>
-                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" spellcheck="true"></textarea><br>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" spellcheck="true"></textarea><br><br>
                 </article>
-            
+    
                 <article>
                     <input type="checkbox" id="terminos" name="terminos" checked>
                     <label for="terminos">Acepto los términos y condiciones de compra</label><br>
-            
+    
                     <input type="checkbox" id="comunicaciones" name="comunicaciones" checked>
-                    <label for="comunicaciones">Deseo recibir información y comunicaciones comerciales sobre nuevos artículos, promociones y ofertas a mi correo electrónico</label><br>
+                    <label for="comunicaciones">Deseo recibir información y comunicaciones comerciales sobre nuevos
+                        artículos, promociones y ofertas a mi correo electrónico</label><br><br>
                 </article>
-            
+    
                 <article>
                     <button type="submit">Solicitar vehículo</button>
                     <button type="button">Cancelar solicitud</button>
                 </article>
-
             </section>
         </section>
+        </section>
     </main>
-
+    <footer>
+        <hr width="100%">
+        <h5>Contactanos para mas informacion</h5>
+        <p>Correo: </p>
+        <p>Instagram: </p>
+        <p>Número de teléfono: </p>
+        <p>&copy;
+    </footer>
 </body>
 
 </html>
